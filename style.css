@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Bayon&display=swap");
+
+/* Base styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f8f2;
+  font-family: "Bayon", sans-serif;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Header styling */
+.page-header {
+  margin-bottom: 8px;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.month-title,
+.lunar-year {
+  color: #4a4a4a;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Main content layout */
+.main-content {
+  background-color: white;
+  border-radius: 10px;
+  padding: 22px;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06);
+}
+
+/* Calendar styling */
+.calendar-wrapper {
+  flex: 3;
+}
+
+.month-calendar {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.month-calendar th {
+  background-color: #00a500;
+  border: white 1px solid;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  padding: 15px;
+  width: 100px;
+}
+
+.month-calendar td {
+  border: 1px solid #e5e5e5;
+  padding: 6px;
+  text-align: center;
+  height: 80px;
+  vertical-align: top;
+  position: relative;
+}
+
+.day-number {
+  margin-bottom: 6px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.lunar-day {
+  color: #8a8a8a;
+  font-size: 0.8rem;
+}
+
+.special-blue {
+  color: #0055aa;
+}
+
+.inactive-day {
+  background-color: #f0f0f0;
+  color: #c0c0c0;
+}
+
+.buddha-marker {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 3px;
+}
+
+.small-icon {
+  width: 20px;
+  margin-top: 5px;
+}
+
+.active-day:hover {
+  background-color: #e8f7fa;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.highlighted {
+  color: #8a8a8a;
+  position: relative;
+}
+
+.holiday {
+  background-color: #fff4f4;
+}
+
+.holiday-text {
+  color: #e00000;
+}
+
+/* Events section styling */
+.events-wrapper {
+  flex: 1;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.events-heading {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.event-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  padding: 6px;
+  border-left: 4px solid #1c3faa;
+  border-radius: 8px;
+  flex: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.important {
+  border-left: 4px solid #dd0000;
+}
+
+.event-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Footer styling */
+.page-footer {
+  text-align: center;
+  color: #7a7a7a;
+  margin-top: 12px;
+  padding: 10px;
+}
